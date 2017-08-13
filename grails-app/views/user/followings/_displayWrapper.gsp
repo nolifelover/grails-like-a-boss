@@ -1,0 +1,1 @@
+<g:link action="getFollowings" id="${bean.id}">${value?.size() > 0 ? value.size(): "-"}</g:link>

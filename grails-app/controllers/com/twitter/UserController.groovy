@@ -104,4 +104,24 @@ class UserController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+    def getFollowers(User user){
+        if (user == null) {
+            notFound()
+            return
+        }else{
+            def followerList = user.followers?.fromUser
+            respond user, model:[followerList: followerList]
+        }
+    }
+
+    def getFollowings(User user){
+        if (user == null) {
+            notFound()
+            return
+        }else{
+            def followingList = user.followings?.fromUser
+            respond user, model:[followingList: followingList]
+        }
+    }
 }
