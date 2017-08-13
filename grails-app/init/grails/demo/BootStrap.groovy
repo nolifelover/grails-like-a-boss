@@ -26,6 +26,9 @@ class BootStrap {
 
     	johnTweet.save()
 
+        def janeFollowJohn = new Follow(fromUser: janeUser, toUser: johnUser)
+        janeFollowJohn.save()
+
     }
     def destroy = {
     }
