@@ -1,7 +1,7 @@
 package com.twitter
 
 class PublicController {
-
+	def processTweetService
     def index() {
     	def tweetList = [] 
     	def timelineTitle = "Timeline"
@@ -29,18 +29,18 @@ class PublicController {
     def createTweet(){
     	def text = params.text
     	//TODO using user from login
-    	def userInstance = User.first()
+    	/*def userInstance = User.first()
 
     	def tweetInstance = new Tweet(params)
     	tweetInstance.user = userInstance
-
-    	if(tweetInstance.validate()){
-    		tweetInstance.save()
+		*/
+		def result = processTweetService.createTweet(text)
+    	if(result.success){
     		flash.css = "success"
     		flash.message = "Success created Tweet"
     	}else{
     		flash.css = "warning"
-    		flash.message = "${tweetInstance.errors}"
+    		flash.message = "${result.errors}"
     	}
     	redirect action:'index'
     }
