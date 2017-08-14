@@ -6,16 +6,18 @@
 	<title>Public</title>
 </head>
 <body>
-	<div class="media">
-	  <div class="media-left">
-	    <a href="#">
-	      <asset:image src="apple-touch-icon.png" width="40"/>
-	    </a>
-	  </div>
-	  <div class="media-body">
-	    <h4 class="media-heading">John Doe</h4>
-	    Hello Tweet
-	  </div>
-	</div>
+	<g:each in="${tweetList}" var="tweet">
+		<div class="media">
+		  <div class="media-left">
+		    <a href="#">
+		      <asset:image src="apple-touch-icon.png" width="40"/>
+		    </a>
+		  </div>
+		  <div class="media-body">
+		    <h4 class="media-heading">@${tweet.user.username}</h4>
+		    ${tweet.text}
+		  </div>
+		</div>
+	</g:each>
 </body>
 </html>
