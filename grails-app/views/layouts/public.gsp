@@ -36,6 +36,9 @@
     </nav>
     <div class="container">
         <div class="row">
+            <g:if test="${flash.message}">
+                <g:render template="/layouts/flash_messsage"/>
+            </g:if>
             <div class="col-md-8">
             <div class="row main-content">
                 <div class="col-md-12">

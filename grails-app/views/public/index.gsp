@@ -6,8 +6,11 @@
 	<title>Public</title>
 </head>
 <body>
+	<div class="create-tweet">
+		<g:render template="createTweet"/>
+	</div>
+	<span class="timeline">${timelineTitle}</span>
 	<g:each in="${tweetList}" var="tweet">
-		<span class="timeline">Timeline </span>
 		<div class="media">
 		  <div class="media-left">
 		    <a href="#">
