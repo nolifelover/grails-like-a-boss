@@ -6,6 +6,16 @@
 	<title>Public</title>
 </head>
 <body>
-	<h2>Public </h2>
+	<div class="media">
+	  <div class="media-left">
+	    <a href="#">
+	      <asset:image src="apple-touch-icon.png" width="40"/>
+	    </a>
+	  </div>
+	  <div class="media-body">
+	    <h4 class="media-heading">John Doe</h4>
+	    Hello Tweet
+	  </div>
+	</div>
 </body>
 </html>

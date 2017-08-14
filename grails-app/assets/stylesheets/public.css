@@ -16,3 +16,13 @@
 	height: 20px;
 	padding:  5px 15px;
 }*/
+
+.main-content{
+	min-height: 500px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+	padding: 20px 5px;
+}

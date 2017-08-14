@@ -35,9 +35,28 @@
       </div>
     </nav>
     <div class="container">
-      <div class="content">
-          <g:layoutBody/>
-      </div>
+        <div class="row">
+            <div class="col-md-8">
+            <div class="row main-content">
+                <div class="col-md-12">
+                    <g:layoutBody/>
+                </div>
+            </div></div>
+            <div class="col-md-4">
+                <div class="row sidebar-content">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Tags</h3>
+                          </div>
+                          <div class="panel-body">
+                            #hello #world
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div> <!-- /container -->
 
