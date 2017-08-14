@@ -7,6 +7,7 @@
 </head>
 <body>
 	<g:each in="${tweetList}" var="tweet">
+		<span class="timeline">Timeline </span>
 		<div class="media">
 		  <div class="media-left">
 		    <a href="#">

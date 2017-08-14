@@ -44,16 +44,7 @@
             </div></div>
             <div class="col-md-4">
                 <div class="row sidebar-content">
-                    <div class="col-md-12">
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h3 class="panel-title">Tags</h3>
-                          </div>
-                          <div class="panel-body">
-                            #hello #world
-                          </div>
-                        </div>
-                    </div>
+                    <g:include action="sidebar" controller="public"/>
                 </div>
             </div>
         </div>
